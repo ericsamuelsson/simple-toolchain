@@ -58,8 +58,7 @@ stages:
       export CF_APP_NAME="$CF_APP"
       export APP_URL=http://$(cf app $CF_APP_NAME | grep urls: | awk '{print $2}')
       # View logs
-      #cf logs "${CF_APP}" --recent
-      
+      #cf logs "${CF_APP}" --recent      
 - name: BUILD2
   inputs:
   - type: git
