@@ -62,7 +62,7 @@ stages:
 - name: BUILD2
   inputs:
   - type: git
-    branch: master
+    branch: test
     service: ${SAMPLE_REPO}
   triggers:
   - type: commit
