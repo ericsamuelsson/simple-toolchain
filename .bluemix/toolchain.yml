@@ -16,9 +16,9 @@ sample-repo:
   service_id: githubpublic
   parameters:
     repo_name: "{{name}}"
-    repo_url: https://github.com/open-toolchain/node-hello-world
+    repo_url: https://github.com/eric-samuelsson/node-hello-world
     type: clone
-    has_issues: true
+    has_issues: false
 
 # Pipelines
 sample-build:
@@ -37,12 +37,7 @@ sample-build:
      execute: true
     services: ["sample-repo"]
   hidden: [form, description]
-    
-
-#Web IDE
-webide:
-  service_id: orion
-  
+      
 #Deployment
 deploy:
   schema: 
