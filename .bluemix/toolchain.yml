@@ -16,7 +16,7 @@ sample-repo:
   service_id: githubpublic
   parameters:
     repo_name: "{{name}}"
-    repo_url: https://github.com/eric-samuelsson/node-hello-world
+    repo_url: https://github.com/ericsamuelsson/node-hello-world
     type: clone
     has_issues: false
 
